@@ -8,10 +8,10 @@ app.use(express.static(__dirname+'/public'))
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'students'
+    host: 'sql12.freesqldatabase.com',
+    user: 'sql12608908',
+    password: 'CeUwrT2HJZ',
+    database: 'sql12608908'
   });
   
 //HOME
