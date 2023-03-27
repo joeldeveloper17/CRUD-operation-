@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/employee.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="heading">
+            <h1>STUDENTS LIST</h1>
+        </div>
+         <button id="heading" style="margin-left: 50px;height: 50px;width: 120px;"><a href="http://localhost:4000/">HOME</a></button>
+      <button id="heading" style="margin-left:1000px;height: 50px;"><a href="/register" >REGISTRATION</a></button>
+      
+         <div class="main-div">
+           <table>
+            <tr>
+                <th>NAME</th>
+                <th>DEPARTMENT</th>
+                <th>EMAIL</th>
+                <th>MOBILE</th>
+                <th>YEAR</th>
+                <th>GRADUATION</th>
+                <th colspan="2">MANIPULATE</th>
+            </tr>
+            <% for(var i=0; i<myObj.length;i++) { %> 
+            <tr>
+                <td><%= myObj[i].name %></td>
+                <td><%= myObj[i].department %></td>
+                <td><%= myObj[i].email %></td>
+                <td><%= myObj[i].phone %></td>
+                <td><%= myObj[i].year %></td>
+                <td><%= myObj[i].graduation %></td>
+                <td><button id="edit"><a href="/edit/<%= myObj[i].name %>">EDIT</a></button> </td>
+                <td><button id="delete"><a href="/delete/<%= myObj[i].name %>">DELETE</a></button></td>
+            </tr>
+        <% }%> 
+           </table>
+        </div>
+    </body>
+</html>
+
+
+

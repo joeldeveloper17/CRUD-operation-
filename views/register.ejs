@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/register.css" rel="stylesheet">
+    </head>
+    <body>
+        <button id="heading" style="margin-left: 50px;height: 50px;width: 120px;"><a href="http://localhost:4000/">HOME</a></button>
+        <button id="heading" style="margin-left:1000px;height: 50px;"><a href="/employee" >STUDENTSLIST</a></button>
+        <!-- <h4 style="color: black;"><a href="http://localhost:4000/" class="bar-items">Home</a></h4>
+        <h4 ><a href="/employee" class="bar-items">STUDENTS</a></h4> -->
+        <h3>REGISTRATION</h3>
+        <form method="POST">
+            <label>Name:</label>
+            <input type="text" required   name="name">
+            <label>Department:</label>
+            <input type="text" required  name="department">
+            <!-- <label>Email:</label>
+            <input type="text" required placeholder="ENTER DESIGNATION" name="designation">
+            <label>Mobile:</label>
+            <input type="number" required placeholder="ENTER USER ID " name="userId">
+            <label>Year passed:</label>
+            <input type="date" required placeholder="ENTER USER ID " name="userId">
+            <label>Graduation:</label>
+            <input type="number" required placeholder="ENTER USER ID " name="userId"> -->
+            <label for="email">Email ID</label><br>
+			<input type="email" id="email" name="email" required><br>
+
+			<label for="phone">Mobile Number</label><br>
+			<input type="tel" id="phone" name="phone" required><br>
+
+            <label for="year">Year Passed</label><br>
+			<input type="text" id="year" name="year" required><br>
+
+            <label for="graduation">Graduation Status</label><br>
+            <!-- <input type="text" required id="graduation"  name="graduation"> -->
+            <select name="graduation" id="graduation">
+                <option value="-------">-------</option>
+                <option value="Completed">Completed</option>
+                <option value="Pursuing">Pursuing</option>
+                <option value="Unknown">Unknown</option>
+              </select>
+            <br>
+            <button  class="submit" type="submit">SUBMIT</button>
+          </form> 
+    </body>
+</html>
+

@@ -1,0 +1,103 @@
+
+/* input{
+    border-color: black;
+}
+input:required{
+    border-color: black;
+}
+input:invalid{
+    border-color: red;
+}
+input:focus{
+    border-color: blue;
+    border-style: dashed;
+} */
+
+/* /* input::placeholder{
+    text-align: center;
+} */
+#heading{
+    background-color: rgb(71, 2, 88);
+    color: white;
+    top: 0;
+    text-align: center;
+ 
+ }
+ a{
+    color: white;
+    
+ }
+
+input[type="text"]{
+  text-align: center;
+} */
+
+body{
+    background-color:#E2ECED;
+}
+
+h3{
+    text-align: center;
+    padding-top: 5%;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 26px;
+}
+
+form{
+    display:grid;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+label{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 6px;
+    padding-top: 16px;
+    border-radius: 4px;
+    border: none;
+    border-width:0.1ch;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input:invalid{
+    border: 1px solid red;
+    animation: shake 0.2s 2;
+}
+@keyframes shake{
+    25%{
+        translate: 8px 0;
+    }
+    50%{
+        translate: -8px 0;
+    }
+    75%{
+        translate: 8px 0;
+    }
+}
+
+.submit{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #55F6A5;
+    border-radius: 4px;
+    border: none;
+    margin-top: 1cm;
+    padding: 10px;
+}
+.submit:hover{
+    background-color: rgb(15, 211, 15);
+}
+
+

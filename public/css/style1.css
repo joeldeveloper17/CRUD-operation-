@@ -1,0 +1,54 @@
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#heading{
+   background-color: rgb(71, 2, 88);
+   color: white;
+   top: 0;
+   text-align: center;
+
+}
+/* #reg{
+   margin-left: 300px;
+} */
+.appbar{
+   color: grey;
+   display: flex;
+   font-family: Arial;
+   margin-left: 350px;
+   margin-top: 200px;
+   font-size: 36px;
+   text-align: center;
+   
+}
+
+a{
+   text-decoration: none;   
+}
+
+.bar-items{
+  padding-right: 48px;
+  cursor:pointer;
+  color: grey;
+  
+  
+}
+#lihom{
+      display: inline-block;
+      float:none;
+}
+
+.bar-items:hover{  
+   color: rgb(9, 9, 9);
+   text-decoration:underline 4px red;  
+}
+
+/* .bar-items:hover::after {
+   transform: scale(0);
+   transform-origin: center;
+ }
+ 
+ .bar-items:hover::after,
+ .bar-items:focus::after{
+   transform: scale(1);
+ } */

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/register.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3>EDIT</h3>
+        <form  class="form" method="POST">
+            
+            <label>Name:</label>
+            <input type="text" value=<%=myObj[0].name %>  name="name">
+            <label>Department:</label>
+            <input type="text" value=<%= myObj[0].department %>  name="department">
+
+            <label for="email">Email ID</label><br>
+			<input type="email" value=<%= myObj[0].email %> name="email" ><br>
+
+			<label for="phone">Mobile Number</label><br>
+			<input type="tel" value=<%= myObj[0].phone %> name="phone" ><br>
+
+            <label for="year">Year Passed</label><br>
+			<input type="text" value=<%= myObj[0].year %> name="year" ><br>
+
+            <label for="graduation">Graduation Status</label><br>
+            <select  value=<%= myObj[0].graduation %> name="graduation" id="graduation">
+                <option value=------->-------</option>
+                <option value=Completed>Completed</option>
+                <option value=Pursuing >Pursuing</option>
+                <option value=Unknown>Unknown</option>
+              </select>
+            <!-- <input type="text"   name="graduation"> -->
+            <!-- <input type="text" value=<%= myObj[0].graduation %>  name="graduation"> -->
+            </select><br>
+            <button  class="submit" type="submit">UPDATE</button>
+          </form> 
+    </body>
+</html>
+
